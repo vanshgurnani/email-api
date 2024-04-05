@@ -17,8 +17,9 @@ async function sendContactEmail(req, res) {
         res.status(200).json({ message: 'Email sent successfully' });
     } catch (error) {
         // Handle errors
+        console.log(error);
         console.error('Error:', error);
-        res.status(500).json({ error: 'An error occurred while sending the email' });
+        res.status(500).json({ error});
     }
 }
 
