@@ -19,7 +19,7 @@ async function sendContactEmail(req, res) {
         // Handle errors
         console.log(error);
         console.error('Error:', error);
-        res.status(500).json({ error});
+        res.status(500).json({error : error});
     }
 }
 
