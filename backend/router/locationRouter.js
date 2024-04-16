@@ -7,6 +7,6 @@ router.get('/', (req, res) => {
     res.send('Welcome to the Email API');
 });
 
-router.get('/location', location.getCurrentLocation);
+router.post('/location', location.getCurrentLocation);
 
 module.exports = router;
