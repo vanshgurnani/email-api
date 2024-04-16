@@ -21,5 +21,5 @@ function getCurrentLocation(req, res) {
 }
 
 module.exports = {
-    getCurrentLocation
+    getCurrentLocation: getCurrentLocation
 };
