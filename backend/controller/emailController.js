@@ -7,11 +7,11 @@ async function sendContactEmail(req, res) {
     
         // Compose email data
         const emailContent = `
-          Message: ${message}
+          ${message}
         `;
     
         // Send email
-        await sendMail(email, 'New Contact Form Submission', emailContent, '');
+        await sendMail(email, 'SmartShip Contact', emailContent, '');
     
         // Respond with success message
         res.status(200).json({ message: 'Email sent successfully' });
